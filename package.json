@@ -1,0 +1,63 @@
+{
+  "name": "@redneckz/react-lib-config",
+  "version": "0.0.0",
+  "author": "Alexander Alexandrov",
+  "description": "Common config (Babel, ESLint, Rollup) for React libs",
+  "keywords": [
+    "config",
+    "eslint",
+    "babel",
+    "rollup",
+    "react"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redneckz/react-lib-config"
+  },
+  "bugs": {
+    "url": "https://github.com/redneckz/react-lib-config/issues"
+  },
+  "homepage": "https://github.com/redneckz/react-lib-config",
+  "bin": {
+    "react-lib-build": "./bin/build/exec.js",
+    "react-lib-init": "./bin/init/exec.js"
+  },
+  "dependencies": {
+    "@babel/cli": "~7.2.3",
+    "@babel/core": "~7.2.2",
+    "@babel/preset-env": "~7.2.3",
+    "@babel/preset-flow": "~7.0.0",
+    "@babel/preset-react": "~7.0.0",
+    "babel-core": "~7.0.0-bridge.0",
+    "babel-eslint": "~10.0.1",
+    "babel-jest": "~23.6.0",
+    "chalk": "~2.4.1",
+    "coveralls": "~3.0.2",
+    "cross-env": "~5.2.0",
+    "enzyme": "~3.8.0",
+    "enzyme-adapter-react-16": "~1.7.1",
+    "eslint": "~5.11.0",
+    "eslint-config-airbnb": "~17.1.0",
+    "eslint-plugin-import": "~2.14.0",
+    "eslint-plugin-jsx-a11y": "~6.1.2",
+    "eslint-plugin-react": "~7.12.0",
+    "flow-bin": "~0.74.0",
+    "flow-copy-source": "~2.0.0",
+    "flow-typed": "~2.4.0",
+    "fs-extra": "~7.0.1",
+    "jest-cli": "~23.6.0",
+    "prettier-eslint-cli": "~4.7.1",
+    "react": "~16.7.0",
+    "react-dom": "~16.7.0",
+    "rimraf": "~2.6.2",
+    "rollup": "~0.68.2",
+    "rollup-plugin-babel": "~4.2.0",
+    "rollup-plugin-commonjs": "~9.2.0",
+    "rollup-plugin-node-resolve": "~4.0.0",
+    "rollup-plugin-uglify": "~6.0.0"
+  },
+  "scripts": {
+    "test": "cd ./test-package && node ../bin/init/exec.js && npm i"
+  }
+}
