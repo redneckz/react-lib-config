@@ -28,5 +28,6 @@ module.exports = {
     }],
     'no-use-before-define': ['error', { 'functions': false }],
     'react/prop-types': 'off',
+    'flowtype/define-flow-type': 1,
   },
 };
