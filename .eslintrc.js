@@ -5,7 +5,10 @@ module.exports = {
     'ecmaVersion': 2018,
     'sourceType': 'module',
   },
-  'plugins': ['import'],
+  'plugins': [
+    'flowtype',
+    'import'
+  ],
   'env': {
     'browser': true,
     'node': true,
