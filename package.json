@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/react-lib-config",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Alexander Alexandrov",
   "description": "Common config (Babel, ESLint, Rollup) for React libs",
   "keywords": [
