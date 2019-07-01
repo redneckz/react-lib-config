@@ -25,10 +25,10 @@
     "dist"
   ],
   "peerDependencies": {
-    "react": "^16.7.0-0"
+    "react": "^16.8.0-0"
   },
   "devDependencies": {
-    "react": "~16.7.0",
+    "react": "~16.8.0",
     "@redneckz/react-lib-config": "file:.."
   },
   "scripts": {
