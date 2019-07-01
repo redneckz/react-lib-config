@@ -11,15 +11,6 @@ const KNOWN_EXTERNALS = [
   'rxjs/operators',
 ];
 
-function getResolverSettings(env) {
-  return {
-    cjs: { main: true, module: false },
-    es: { main: false, module: true },
-    development: 'umd',
-    production: 'umd',
-  }[env];
-}
-
 module.exports = ({ peers }) => ({
   input: 'src/index.js',
   external: KNOWN_EXTERNALS.concat(Object.keys(peers || {})),
@@ -34,9 +25,9 @@ module.exports = ({ peers }) => ({
     commonjs(),
     ENV === 'production' && uglify({
       keep_fnames: true,
+      warnings: false,
       compress: {
         pure_getters: true,
-        warnings: false,
       },
     }),
   ],
