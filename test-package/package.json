@@ -25,14 +25,14 @@
     "dist"
   ],
   "peerDependencies": {
-    "react": "^16.8.0-0"
+    "react": "^16.9.0-0"
   },
   "devDependencies": {
-    "react": "~16.8.0",
+    "react": "16.9.0",
     "@redneckz/react-lib-config": "file:.."
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "prebuild": "npm run eslint && npm run jest && npm run clean",
     "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "build:commonjs": "cross-env NODE_ENV=cjs react-lib-build",

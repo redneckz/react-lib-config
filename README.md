@@ -4,7 +4,7 @@ Common configuration to bundle, lint and test React libraries.
 Based on Rollup, Babel, ESLint, Jest, Flow.
 
 [![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status][build-image]][build-url]
 
 ## How-to
 
@@ -26,11 +26,11 @@ Based on Rollup, Babel, ESLint, Jest, Flow.
     "dist"
   ],
   "peerDependencies": {
-    "react": "^16.7.0-0"
+    "react": "^16.9.0-0"
   },
   "devDependencies": {
-    "react": "~16.7.0",
-    "@redneckz/react-lib-config": "~0.0.1"
+    "react": "16.9.0",
+    "@redneckz/react-lib-config": "0.0.8"
   },
   "scripts": {
     "prepublish": "npm run build",
@@ -56,6 +56,5 @@ Based on Rollup, Babel, ESLint, Jest, Flow.
 
 [npm-image]: https://badge.fury.io/js/%40redneckz%2Freact-lib-config.svg
 [npm-url]: https://www.npmjs.com/package/%40redneckz%2Freact-lib-config
-[travis-image]: https://travis-ci.org/redneckz/react-lib-config.svg?branch=master
-[travis-url]: https://travis-ci.org/redneckz/react-lib-config
-
+[build-image]: https://cloud.drone.io/api/badges/redneckz/react-lib-config/status.svg
+[build-url]: https://cloud.drone.io/redneckz/react-lib-config

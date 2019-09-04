@@ -1,0 +1,32 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: test
+  image: node:10
+  commands:
+  - npm install
+  - npm test
+
+trigger:
+  event:
+  - push
+  - pull_request
+
+---
+kind: pipeline
+type: docker
+name: publish
+
+steps:
+- name: publish
+  image: node:10
+  commands:
+  - npm install
+  - npm publish --access=public
+
+trigger:
+  event:
+  - tag
