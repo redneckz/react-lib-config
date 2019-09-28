@@ -26,11 +26,11 @@ Based on Rollup, Babel, ESLint, Jest, Flow.
     "dist"
   ],
   "peerDependencies": {
-    "react": "^16.9.0-0"
+    "react": "^16.10.0-0"
   },
   "devDependencies": {
-    "react": "16.9.0",
-    "@redneckz/react-lib-config": "0.0.8"
+    "react": "16.10.0",
+    "@redneckz/react-lib-config": "0.0.9"
   },
   "scripts": {
     "prepublish": "npm run build",
