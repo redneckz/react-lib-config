@@ -1,7 +1,7 @@
 # react-lib-config
 
 Common configuration to bundle, lint and test React libraries.
-Based on Rollup, Babel, ESLint, Jest, Flow.
+Based on Rollup, Babel, ESLint, Jest.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][build-image]][build-url]
@@ -9,7 +9,7 @@ Based on Rollup, Babel, ESLint, Jest, Flow.
 ## How-to
 
 1. Install: `$ npm install @redneckz/react-lib-config`
-2. Configure Rollup, Babel, ESLint, Jest, Flow: `$ react-lib-init`
+2. Configure Rollup, Babel, ESLint, Jest: `$ react-lib-init`
 3. Declare some meta and add some scripts to lint, test, build and publish your library
 
 ```json
@@ -19,12 +19,7 @@ Based on Rollup, Babel, ESLint, Jest, Flow.
   "main": "lib/index.js",
   "module": "es/index.js",
   "browser": "dist/index.min.js",
-  "files": [
-    "src",
-    "lib",
-    "es",
-    "dist"
-  ],
+  "files": ["src", "lib", "es", "dist"],
   "peerDependencies": {
     "react": "^16.10.0-0"
   },

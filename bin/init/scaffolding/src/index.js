@@ -1,5 +1,3 @@
-// @flow
-
-export function helloReactLib(): void {
+export function helloReactLib() {
   console.log('Hello React Lib');
 }
